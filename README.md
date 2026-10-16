@@ -2,12 +2,11 @@
 
 *Ainm* is the Irish word for "name".
 
-A small Python tool that **predicts and generates baby names** using a
+It's a small Python tool that **predicts and generates baby names** using a
 character-level Markov chain. It learns which letters tend to follow which
 letter-sequences in a list of real names, then uses that to suggest the next
 letter or invent brand-new names that sound plausible.
 
-No dependencies, pure standard library.
 
 ## Example
 
@@ -70,7 +69,7 @@ predictor.predict_next("Ni")
 4. If a long context has never been seen, it **backs off** to a shorter one so
    generation doesn't dead-end.
 5. Generated names that already exist in the training list are filtered out,
-   so every suggestion is genuinely new.
+   so every suggestion is new.
 
 ## Training data
 
